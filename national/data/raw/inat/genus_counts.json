@@ -1,0 +1,34 @@
+{
+ "Aedes": {
+  "taxon_id": 62989,
+  "obs_2016_2025": 30027
+ },
+ "Culex": {
+  "taxon_id": 130033,
+  "obs_2016_2025": 7585
+ },
+ "Anopheles": {
+  "taxon_id": 146949,
+  "obs_2016_2025": 3917
+ },
+ "Psorophora": {
+  "taxon_id": 132757,
+  "obs_2016_2025": 9057
+ },
+ "Culiseta": {
+  "taxon_id": 155392,
+  "obs_2016_2025": 2325
+ },
+ "Toxorhynchites": {
+  "taxon_id": 155464,
+  "obs_2016_2025": 2612
+ },
+ "Coquillettidia": {
+  "taxon_id": 155399,
+  "obs_2016_2025": 1327
+ },
+ "Uranotaenia": {
+  "taxon_id": 155400,
+  "obs_2016_2025": 395
+ }
+}

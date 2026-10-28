@@ -1,0 +1,6 @@
+COLUMN / VARIABLE NAME,FORMAT,DEFINITION
+Year,date,Year reported
+Week Reported,integer,Week reported
+County,string,County reported
+Positive Cases,integer,"Confirmed human West Nile Virus cases as defined by West Nile Virus in California:
+Guidelines for Human Testing and Surveillance Within the Regional Public Health Laboratory Network available here: http://www.westnile.ca.gov/resources.php"

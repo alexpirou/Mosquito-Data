@@ -1,0 +1,771 @@
+{
+ "descriptives": {
+  "n_obs": 75798,
+  "n_observers": 23078,
+  "pct_culex": 10.0,
+  "pct_family_only": 11.7,
+  "pct_research_grade": 40.0,
+  "pct_with_county": 99.5,
+  "pct_obs_top1pct_users": 29.9,
+  "pct_obs_top10_users": 5.5,
+  "pct_users_single_obs": 69.4,
+  "by_year": [
+   {
+    "year": 2016,
+    "mosq_obs": 1156,
+    "observers": 443,
+    "insect_obs": 376348.0,
+    "wnv_cases": 2149.0,
+    "wnv_neuro": 1309.0
+   },
+   {
+    "year": 2017,
+    "mosq_obs": 1581,
+    "observers": 673,
+    "insect_obs": 654236.0,
+    "wnv_cases": 2096.0,
+    "wnv_neuro": 1424.0
+   },
+   {
+    "year": 2018,
+    "mosq_obs": 2833,
+    "observers": 1418,
+    "insect_obs": 1086066.0,
+    "wnv_cases": 2646.0,
+    "wnv_neuro": 1657.0
+   },
+   {
+    "year": 2019,
+    "mosq_obs": 3521,
+    "observers": 1852,
+    "insect_obs": 1805040.0,
+    "wnv_cases": 971.0,
+    "wnv_neuro": 633.0
+   },
+   {
+    "year": 2020,
+    "mosq_obs": 6909,
+    "observers": 3297,
+    "insect_obs": 2842812.0,
+    "wnv_cases": 731.0,
+    "wnv_neuro": 559.0
+   },
+   {
+    "year": 2021,
+    "mosq_obs": 9858,
+    "observers": 4069,
+    "insect_obs": 3379319.0,
+    "wnv_cases": 2911.0,
+    "wnv_neuro": 2008.0
+   },
+   {
+    "year": 2022,
+    "mosq_obs": 8154,
+    "observers": 3647,
+    "insect_obs": 3760567.0,
+    "wnv_cases": 1132.0,
+    "wnv_neuro": 827.0
+   },
+   {
+    "year": 2023,
+    "mosq_obs": 11214,
+    "observers": 4686,
+    "insect_obs": 4297664.0,
+    "wnv_cases": 2628.0,
+    "wnv_neuro": 1789.0
+   },
+   {
+    "year": 2024,
+    "mosq_obs": 13802,
+    "observers": 5754,
+    "insect_obs": 5236801.0,
+    "wnv_cases": 1808.0,
+    "wnv_neuro": 1347.0
+   },
+   {
+    "year": 2025,
+    "mosq_obs": 16770,
+    "observers": 7014,
+    "insect_obs": 6381956.0,
+    "wnv_cases": 2167.0,
+    "wnv_neuro": 1517.0
+   }
+  ]
+ },
+ "seasonal": {
+  "peak_month": {
+   "mosq_obs": 7,
+   "insect_obs": 7,
+   "cranefly_obs": 5,
+   "wnv_neuro": 8
+  },
+  "center_of_mass_month": {
+   "mosq_obs": 7.25,
+   "insect_obs": 6.94,
+   "cranefly_obs": 5.99,
+   "wnv_neuro": 8.38
+  },
+  "profile_corr_by_shift": {
+   "0": 0.663,
+   "1": 0.703,
+   "2": 0.627,
+   "3": 0.395
+  },
+  "monthly_pct": {
+   "mosquito": [
+    1.3,
+    1.7,
+    2.8,
+    7.4,
+    11.1,
+    13.4,
+    15.0,
+    13.7,
+    14.8,
+    11.0,
+    5.3,
+    2.5
+   ],
+   "culex": [
+    2.6,
+    2.5,
+    3.7,
+    7.1,
+    8.3,
+    10.7,
+    9.6,
+    10.9,
+    14.7,
+    16.5,
+    9.7,
+    3.5
+   ],
+   "insect": [
+    0.8,
+    1.3,
+    3.7,
+    8.7,
+    11.3,
+    15.3,
+    18.5,
+    15.4,
+    12.7,
+    7.8,
+    3.2,
+    1.4
+   ],
+   "wnv_neuro": [
+    0.1,
+    0.1,
+    0.1,
+    0.2,
+    0.5,
+    2.5,
+    12.9,
+    38.9,
+    32.7,
+    9.6,
+    2.0,
+    0.5
+   ]
+  },
+  "culex_center_of_mass_month": 7.54,
+  "culex_peak_month": 10
+ },
+ "genera_pct_of_mosquito_obs": {
+  "Aedes": 39.6,
+  "Culex": 10.0,
+  "Anopheles": 5.2,
+  "Psorophora": 11.9,
+  "Culiseta": 3.1,
+  "Toxorhynchites": 3.4,
+  "Coquillettidia": 1.8,
+  "Uranotaenia": 0.5
+ },
+ "monthly_anomaly": {
+  "total_lag0": {
+   "r": 0.254,
+   "p_naive": 0.0502,
+   "p_year_permutation": 0.1669,
+   "n": 60
+  },
+  "total_lag1": {
+   "r": 0.393,
+   "p_naive": 0.0019,
+   "p_year_permutation": 0.022,
+   "n": 60
+  },
+  "total_lag2": {
+   "r": 0.441,
+   "p_naive": 0.0004,
+   "p_year_permutation": 0.02,
+   "n": 60
+  },
+  "within_year_lag0": {
+   "r": 0.054,
+   "p_naive": 0.6795,
+   "p_year_permutation": 0.7786,
+   "n": 60
+  },
+  "within_year_lag1": {
+   "r": 0.15,
+   "p_naive": 0.2531,
+   "p_year_permutation": 0.4628,
+   "n": 60
+  },
+  "within_year_lag2": {
+   "r": 0.049,
+   "p_naive": 0.7077,
+   "p_year_permutation": 0.7956,
+   "n": 60
+  }
+ },
+ "year_level": {
+  "share": {
+   "spearman_rho": 0.345,
+   "p": 0.3282,
+   "n": 10
+  },
+  "crane": {
+   "spearman_rho": -0.285,
+   "p": 0.425,
+   "n": 10
+  },
+  "share_JulSep": {
+   "spearman_rho": 0.576,
+   "p": 0.0816,
+   "n": 10
+  }
+ },
+ "year_level_table": [
+  {
+   "year": 2016,
+   "mosq_obs": 535.0,
+   "insect_obs": 186184.0,
+   "cranefly_obs": 758.0,
+   "wnv_neuro": 1309.0,
+   "share": 2.874,
+   "crane": 4.071,
+   "share_JulSep": 2.333
+  },
+  {
+   "year": 2017,
+   "mosq_obs": 797.0,
+   "insect_obs": 325871.0,
+   "cranefly_obs": 1281.0,
+   "wnv_neuro": 1424.0,
+   "share": 2.446,
+   "crane": 3.931,
+   "share_JulSep": 1.882
+  },
+  {
+   "year": 2018,
+   "mosq_obs": 1119.0,
+   "insect_obs": 555579.0,
+   "cranefly_obs": 2306.0,
+   "wnv_neuro": 1657.0,
+   "share": 2.014,
+   "crane": 4.151,
+   "share_JulSep": 2.352
+  },
+  {
+   "year": 2019,
+   "mosq_obs": 1736.0,
+   "insect_obs": 951547.0,
+   "cranefly_obs": 5401.0,
+   "wnv_neuro": 633.0,
+   "share": 1.824,
+   "crane": 5.676,
+   "share_JulSep": 1.581
+  },
+  {
+   "year": 2020,
+   "mosq_obs": 3096.0,
+   "insect_obs": 1490933.0,
+   "cranefly_obs": 8219.0,
+   "wnv_neuro": 559.0,
+   "share": 2.077,
+   "crane": 5.513,
+   "share_JulSep": 2.338
+  },
+  {
+   "year": 2021,
+   "mosq_obs": 4636.0,
+   "insect_obs": 1818501.0,
+   "cranefly_obs": 9758.0,
+   "wnv_neuro": 2008.0,
+   "share": 2.549,
+   "crane": 5.366,
+   "share_JulSep": 3.21
+  },
+  {
+   "year": 2022,
+   "mosq_obs": 3720.0,
+   "insect_obs": 2017475.0,
+   "cranefly_obs": 9251.0,
+   "wnv_neuro": 827.0,
+   "share": 1.844,
+   "crane": 4.585,
+   "share_JulSep": 2.052
+  },
+  {
+   "year": 2023,
+   "mosq_obs": 4836.0,
+   "insect_obs": 2360966.0,
+   "cranefly_obs": 11185.0,
+   "wnv_neuro": 1789.0,
+   "share": 2.048,
+   "crane": 4.737,
+   "share_JulSep": 2.439
+  },
+  {
+   "year": 2024,
+   "mosq_obs": 6726.0,
+   "insect_obs": 2963532.0,
+   "cranefly_obs": 14611.0,
+   "wnv_neuro": 1347.0,
+   "share": 2.27,
+   "crane": 4.93,
+   "share_JulSep": 2.542
+  },
+  {
+   "year": 2025,
+   "mosq_obs": 8315.0,
+   "insect_obs": 3349298.0,
+   "cranefly_obs": 15037.0,
+   "wnv_neuro": 1517.0,
+   "share": 2.483,
+   "crane": 4.49,
+   "share_JulSep": 2.257
+  }
+ ],
+ "panel_n": {
+  "state_years": 508,
+  "states": 51,
+  "dropped_low_activity": 2
+ },
+ "panel_fe": [
+  {
+   "signal": "Mosquito share of insect obs (Apr-Jul)",
+   "var": "x_share_early",
+   "beta": 0.072,
+   "se": 0.063,
+   "p": 0.2528,
+   "within_R2": 0.0032,
+   "n": 508
+  },
+  {
+   "signal": "Mosquito observers per insect obs (Apr-Jul)",
+   "var": "x_obsr_early",
+   "beta": 0.058,
+   "se": 0.089,
+   "p": 0.51,
+   "within_R2": 0.0012,
+   "n": 508
+  },
+  {
+   "signal": "Culex share of insect obs (Apr-Jul)",
+   "var": "x_culex_early",
+   "beta": 0.05,
+   "se": 0.038,
+   "p": 0.1864,
+   "within_R2": 0.0033,
+   "n": 508
+  },
+  {
+   "signal": "Raw mosquito obs count (Apr-Jul)",
+   "var": "x_count_early",
+   "beta": 0.09,
+   "se": 0.073,
+   "p": 0.217,
+   "within_R2": 0.0048,
+   "n": 508
+  },
+  {
+   "signal": "Unique mosquito observers (Apr-Jul)",
+   "var": "x_obscount_early",
+   "beta": 0.098,
+   "se": 0.106,
+   "p": 0.3525,
+   "within_R2": 0.0028,
+   "n": 508
+  },
+  {
+   "signal": "PLACEBO: crane-fly share of insect obs (Apr-Jul)",
+   "var": "x_crane_early",
+   "beta": -0.058,
+   "se": 0.086,
+   "p": 0.5036,
+   "within_R2": 0.0011,
+   "n": 508
+  },
+  {
+   "signal": "Mosquito share of insect obs (full year, concurrent)",
+   "var": "x_share_full",
+   "beta": -0.005,
+   "se": 0.065,
+   "p": 0.9327,
+   "within_R2": 0.0,
+   "n": 508
+  }
+ ],
+ "panel_robust": {
+  "count_with_insect_control": {
+   "beta_count": 0.089,
+   "p": 0.2051,
+   "beta_insect": 0.001
+  },
+  "all_cases_outcome_share": {
+   "beta": 0.083,
+   "p": 0.235
+  }
+ },
+ "panel_2020_2025": {
+  "x_share_early": {
+   "beta": 0.248,
+   "se": 0.142,
+   "p": 0.0806,
+   "n": 306
+  },
+  "x_obsr_early": {
+   "beta": 0.118,
+   "se": 0.145,
+   "p": 0.4169,
+   "n": 306
+  },
+  "x_culex_early": {
+   "beta": 0.039,
+   "se": 0.061,
+   "p": 0.5249,
+   "n": 306
+  },
+  "x_crane_early": {
+   "beta": -0.239,
+   "se": 0.2,
+   "p": 0.2317,
+   "n": 306
+  },
+  "x_share_full": {
+   "beta": 0.029,
+   "se": 0.142,
+   "p": 0.8365,
+   "n": 306
+  }
+ },
+ "panel_MayJun": {
+  "beta": 0.085,
+  "se": 0.057,
+  "p": 0.1347,
+  "n": 508
+ },
+ "panel_naive": {
+  "x_count_early": {
+   "spearman_rho": 0.226,
+   "p": 0.0
+  },
+  "x_share_early": {
+   "spearman_rho": -0.039,
+   "p": 0.3854
+  }
+ },
+ "panel_nb": {
+  "beta": 0.198,
+  "p_model_se": 0.0097,
+  "beta_glm": 0.198,
+  "p_cluster_se": 0.1024,
+  "alpha": 0.396
+ },
+ "panel_no_year_fe": {
+  "beta": 0.128,
+  "se": 0.059,
+  "p": 0.0291
+ },
+ "per_state": {
+  "n_states": 46,
+  "n_positive": 28,
+  "median_rho": 0.159,
+  "sign_test_p": 0.1839,
+  "table": [
+   {
+    "state": "AL",
+    "years": 10,
+    "rho": 0.304
+   },
+   {
+    "state": "AR",
+    "years": 10,
+    "rho": 0.165
+   },
+   {
+    "state": "AZ",
+    "years": 10,
+    "rho": -0.152
+   },
+   {
+    "state": "CA",
+    "years": 10,
+    "rho": 0.661
+   },
+   {
+    "state": "CO",
+    "years": 10,
+    "rho": 0.182
+   },
+   {
+    "state": "CT",
+    "years": 10,
+    "rho": 0.0
+   },
+   {
+    "state": "DC",
+    "years": 10,
+    "rho": -0.044
+   },
+   {
+    "state": "DE",
+    "years": 10,
+    "rho": -0.031
+   },
+   {
+    "state": "FL",
+    "years": 10,
+    "rho": 0.213
+   },
+   {
+    "state": "GA",
+    "years": 10,
+    "rho": 0.225
+   },
+   {
+    "state": "IA",
+    "years": 10,
+    "rho": 0.036
+   },
+   {
+    "state": "ID",
+    "years": 10,
+    "rho": -0.153
+   },
+   {
+    "state": "IL",
+    "years": 10,
+    "rho": 0.091
+   },
+   {
+    "state": "IN",
+    "years": 10,
+    "rho": 0.248
+   },
+   {
+    "state": "KS",
+    "years": 10,
+    "rho": 0.049
+   },
+   {
+    "state": "KY",
+    "years": 10,
+    "rho": -0.262
+   },
+   {
+    "state": "LA",
+    "years": 10,
+    "rho": -0.188
+   },
+   {
+    "state": "MA",
+    "years": 10,
+    "rho": -0.226
+   },
+   {
+    "state": "MD",
+    "years": 10,
+    "rho": 0.276
+   },
+   {
+    "state": "MI",
+    "years": 10,
+    "rho": -0.139
+   },
+   {
+    "state": "MN",
+    "years": 10,
+    "rho": 0.212
+   },
+   {
+    "state": "MO",
+    "years": 10,
+    "rho": -0.128
+   },
+   {
+    "state": "MS",
+    "years": 10,
+    "rho": 0.415
+   },
+   {
+    "state": "MT",
+    "years": 10,
+    "rho": -0.038
+   },
+   {
+    "state": "NC",
+    "years": 10,
+    "rho": -0.476
+   },
+   {
+    "state": "ND",
+    "years": 8,
+    "rho": 0.299
+   },
+   {
+    "state": "NE",
+    "years": 10,
+    "rho": 0.273
+   },
+   {
+    "state": "NJ",
+    "years": 10,
+    "rho": 0.317
+   },
+   {
+    "state": "NM",
+    "years": 10,
+    "rho": 0.552
+   },
+   {
+    "state": "NV",
+    "years": 10,
+    "rho": 0.153
+   },
+   {
+    "state": "NY",
+    "years": 10,
+    "rho": 0.152
+   },
+   {
+    "state": "OH",
+    "years": 10,
+    "rho": -0.232
+   },
+   {
+    "state": "OK",
+    "years": 10,
+    "rho": 0.571
+   },
+   {
+    "state": "OR",
+    "years": 10,
+    "rho": 0.463
+   },
+   {
+    "state": "PA",
+    "years": 10,
+    "rho": 0.261
+   },
+   {
+    "state": "RI",
+    "years": 10,
+    "rho": 0.362
+   },
+   {
+    "state": "SC",
+    "years": 10,
+    "rho": -0.024
+   },
+   {
+    "state": "SD",
+    "years": 10,
+    "rho": 0.212
+   },
+   {
+    "state": "TN",
+    "years": 10,
+    "rho": 0.406
+   },
+   {
+    "state": "TX",
+    "years": 10,
+    "rho": 0.709
+   },
+   {
+    "state": "UT",
+    "years": 10,
+    "rho": -0.098
+   },
+   {
+    "state": "VA",
+    "years": 10,
+    "rho": 0.602
+   },
+   {
+    "state": "WA",
+    "years": 10,
+    "rho": -0.431
+   },
+   {
+    "state": "WI",
+    "years": 10,
+    "rho": 0.176
+   },
+   {
+    "state": "WV",
+    "years": 10,
+    "rho": -0.216
+   },
+   {
+    "state": "WY",
+    "years": 10,
+    "rho": -0.262
+   }
+  ]
+ },
+ "out_of_sample": {
+  "x_share_early": {
+   "mae_baseline": 0.6824,
+   "mae_with_signal": 0.6874,
+   "improvement_pct": -0.74,
+   "n": 508
+  },
+  "x_obsr_early": {
+   "mae_baseline": 0.6824,
+   "mae_with_signal": 0.6891,
+   "improvement_pct": -0.98,
+   "n": 508
+  },
+  "x_culex_early": {
+   "mae_baseline": 0.6824,
+   "mae_with_signal": 0.6859,
+   "improvement_pct": -0.52,
+   "n": 508
+  },
+  "x_crane_early": {
+   "mae_baseline": 0.6824,
+   "mae_with_signal": 0.6849,
+   "improvement_pct": -0.37,
+   "n": 508
+  }
+ },
+ "county": {
+  "n_counties": 2160,
+  "spearman_share_incidence": {
+   "rho": 0.066,
+   "p": 0.00224
+  },
+  "spearman_culex_incidence": {
+   "rho": 0.041,
+   "p": 0.05776
+  },
+  "spearman_share_activity_years": {
+   "rho": 0.075,
+   "p": 0.0005
+  },
+  "ols_within_state": {
+   "beta": 0.006,
+   "p": 0.5734,
+   "n": 2160
+  },
+  "logit_any_case_within_state": {
+   "beta": 0.057,
+   "p": 0.4764
+  }
+ }
+}

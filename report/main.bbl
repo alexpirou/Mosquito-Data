@@ -1,0 +1,87 @@
+\begin{thebibliography}{12}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[{Centers for Disease Control and
+  Prevention}(2026{\natexlab{a}})]{cdc_historic}
+{Centers for Disease Control and Prevention}.
+\newblock {West Nile Virus: Historic Data (1999--2025)}.
+\newblock
+  \url{https://www.cdc.gov/west-nile-virus/data-maps/historic-data.html},
+  2026{\natexlab{a}}.
+\newblock ArboNET data finalized September 16, 2026. Accessed October 26, 2026.
+
+\bibitem[{iNaturalist}(2026{\natexlab{a}})]{inat_about}
+{iNaturalist}.
+\newblock {About iNaturalist}.
+\newblock \url{https://www.inaturalist.org/pages/about}, 2026{\natexlab{a}}.
+\newblock Accessed October 26, 2026.
+
+\bibitem[{Centers for Disease Control and
+  Prevention}(2026{\natexlab{b}})]{cdc_causes}
+{Centers for Disease Control and Prevention}.
+\newblock {West Nile: Causes and How It Spreads}.
+\newblock \url{https://www.cdc.gov/west-nile-virus/causes/index.html},
+  2026{\natexlab{b}}.
+\newblock Accessed October 26, 2026.
+
+\bibitem[Ginsberg et~al.(2009)Ginsberg, Mohebbi, Patel, Brammer, Smolinski, and
+  Brilliant]{ginsberg2009}
+Jeremy Ginsberg, Matthew~H. Mohebbi, Rajan~S. Patel, Lynnette Brammer, Mark~S.
+  Smolinski, and Larry Brilliant.
+\newblock {Detecting influenza epidemics using search engine query data}.
+\newblock \emph{Nature}, 457\penalty0 (7232):\penalty0 1012--1014, 2009.
+\newblock \doi{10.1038/nature07634}.
+
+\bibitem[Goel et~al.(2010)Goel, Hofman, Lahaie, Pennock, and Watts]{goel2010}
+Sharad Goel, Jake~M. Hofman, S{\'e}bastien Lahaie, David~M. Pennock, and
+  Duncan~J. Watts.
+\newblock {Predicting consumer behavior with Web search}.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 107\penalty0
+  (41):\penalty0 17486--17490, 2010.
+\newblock \doi{10.1073/pnas.1005962107}.
+
+\bibitem[{iNaturalist}(2026{\natexlab{b}})]{inat_api}
+{iNaturalist}.
+\newblock {iNaturalist API (v1 and v2)}.
+\newblock \url{https://api.inaturalist.org/v1/docs/}, 2026{\natexlab{b}}.
+\newblock Observations and histogram endpoints. Accessed October 26, 2026.
+
+\bibitem[{Plotly}(2026)]{plotly_county}
+{Plotly}.
+\newblock {County population estimates (minoritymajority.csv), from U.S. Census
+  Bureau 2016 estimates}.
+\newblock
+  \url{https://raw.githubusercontent.com/plotly/datasets/master/minoritymajority.csv},
+  2026.
+\newblock Accessed October 26, 2026.
+
+\bibitem[{Anthropic}(2026)]{claude}
+{Anthropic}.
+\newblock {Claude}.
+\newblock \url{https://claude.ai}, 2026.
+
+\bibitem[{The pandas development team}()]{pandas}
+{The pandas development team}.
+\newblock {pandas documentation}.
+\newblock \url{https://pandas.pydata.org/docs/}.
+
+\bibitem[Seabold and Perktold()]{statsmodels}
+Skipper Seabold and Josef Perktold.
+\newblock {statsmodels: Econometric and Statistical Modeling with Python}.
+\newblock \url{https://www.statsmodels.org/stable/}.
+
+\bibitem[Gillies et~al.()]{shapely}
+Sean Gillies et~al.
+\newblock {Shapely documentation}.
+\newblock \url{https://shapely.readthedocs.io/}.
+
+\bibitem[Hunter et~al.()]{matplotlib}
+John~D. Hunter et~al.
+\newblock {Matplotlib documentation}.
+\newblock \url{https://matplotlib.org/stable/}.
+
+\end{thebibliography}

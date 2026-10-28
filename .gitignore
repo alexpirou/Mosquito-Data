@@ -1,0 +1,27 @@
+# Download caches (rebuilt automatically by the scripts)
+data_*/cache/*.json
+!data_*/cache/places.json
+
+# Texas report PDFs (large; re-download with scripts/tx_download_reports.py)
+tx_reports/
+
+# LaTeX build files
+report/*.aux
+report/*.log
+report/*.out
+report/*.blg
+report/*.synctex.gz
+report/*.fdb_latexmk
+report/*.fls
+
+# Python and notebooks
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
