@@ -1,0 +1,22 @@
+parsed 581 reports, 4 failed
+  FAILED tx_reports\2018\13Apr2018Week15.pdf: no header
+  FAILED tx_reports\2017\17Nov2017Week46.pdf: no header
+  FAILED tx_reports\2017\10Nov2017Week45.pdf: no header
+  FAILED tx_reports\2017\09June2017Week23.pdf: no header
+4 duplicate (year, week) reports dropped; 577 kept
+Table 3 pool sum equals Table 1 WNV pools in 451 of 517 reports
+  2016: 33 mismatched weeks, e.g. wk19 t3=0 t1=2; wk20 t3=0 t1=6; wk21 t3=0 t1=7; wk22 t3=0 t1=9; wk23 t3=0 t1=11; wk24 t3=0 t1=32
+  2017: 32 mismatched weeks, e.g. wk18 t3=0 t1=9; wk19 t3=0 t1=16; wk20 t3=0 t1=19; wk21 t3=0 t1=20; wk22 t3=0 t1=26; wk24 t3=0 t1=47
+  2022: 1 mismatched weeks, e.g. wk42 t3=380 t1=378
+  2018: 2 negative weekly differences (report corrections), clipped to 0
+  2021: 2 negative weekly differences (report corrections), clipped to 0
+  2022: 3 negative weekly differences (report corrections), clipped to 0
+  2023: 2 negative weekly differences (report corrections), clipped to 0
+  2014: missing weeks [35, 49]
+  2016: missing weeks [51]
+  2017: missing weeks [23, 45, 46]
+  2018: missing weeks [5, 15, 26]
+  2019: missing weeks [18]
+  2023: missing weeks [3]
+  2026: missing weeks [9]
+wrote 23894 county-week rows, 160 counties

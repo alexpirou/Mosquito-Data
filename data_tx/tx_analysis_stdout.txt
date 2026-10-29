@@ -1,0 +1,133 @@
+﻿{
+ "sd_x_share": 0.933,
+ "beta_lag4": 0.0604,
+ "log1p_pools_change_per_sd": 0.0563,
+ "mean_new_pools_per_county_week": 1.503,
+ "pct_county_weeks_with_new_pool": 22.2
+}
+
+CONTROLLING FOR THE COUNTY'S OWN POOL HISTORY (anomaly spec)
+  lag1 no control: 0.0447 0.0349 | with control: 0.037 0.0157 0.0242 | pool-history coef: 0.3492
+  lag2 no control: 0.0487 0.0226 | with control: 0.0418 0.0155 0.0108 | pool-history coef: 0.3435
+  lag3 no control: 0.0609 0.004 | with control: 0.0563 0.0156 0.001 | pool-history coef: 0.3281
+  lag4 no control: 0.0604 0.0022 | with control: 0.057 0.0142 0.0003 | pool-history coef: 0.3131
+  lag5 no control: 0.0646 0.0009 | with control: 0.0617 0.0158 0.0004 | pool-history coef: 0.298
+  lag6 no control: 0.0643 0.0025 | with control: 0.0606 0.018 0.0019 | pool-history coef: 0.2797
+  lag7 no control: 0.0625 0.0043 | with control: 0.0563 0.0189 0.0053 | pool-history coef: 0.264
+  lag8 no control: 0.0655 0.0023 | with control: 0.0587 0.018 0.0025 | pool-history coef: 0.2437
+
+ROBUSTNESS (anomaly spec, lag 4, pools ~ share)
+  baseline {'beta': 0.0604, 'se': 0.0183, 'p': 0.0022, 'n': 5635, 'counties': 35}
+  min_obs_100k {'counties': 19, 'beta': 0.0447, 'se': 0.0255, 'p': 0.097, 'n': 3059}
+  min_obs_5k {'counties': 42, 'beta': 0.061, 'se': 0.0171, 'p': 0.001, 'n': 6762}
+  drop_top4_pool_counties {'beta': 0.0395, 'se': 0.0161, 'p': 0.0198, 'n': 4991, 'counties': 31}
+  drop_top10_pool_counties {'beta': 0.0247, 'se': 0.013, 'p': 0.0691, 'n': 4025, 'counties': 25}
+  only_top10_pool_counties {'beta': 0.0088, 'se': 0.0411, 'p': 0.8349, 'n': 1610, 'counties': 10}
+  drop_year_2019 {'beta': 0.0416, 'se': 0.0203, 'p': 0.0482, 'n': 4830, 'counties': 35}
+  drop_year_2020 {'beta': 0.0749, 'se': 0.0209, 'p': 0.0011, 'n': 4830, 'counties': 35}
+  drop_year_2021 {'beta': 0.0573, 'se': 0.019, 'p': 0.0048, 'n': 4830, 'counties': 35}
+  drop_year_2022 {'beta': 0.0702, 'se': 0.0249, 'p': 0.0079, 'n': 4830, 'counties': 35}
+  drop_year_2023 {'beta': 0.0692, 'se': 0.0215, 'p': 0.0028, 'n': 4830, 'counties': 35}
+  drop_year_2024 {'beta': 0.0477, 'se': 0.0164, 'p': 0.0063, 'n': 4830, 'counties': 35}
+  drop_year_2025 {'beta': 0.0611, 'se': 0.021, 'p': 0.0063, 'n': 4830, 'counties': 35}
+  county_year_fe_variant {'beta': 0.0354, 'se': 0.011, 'p': 0.0029, 'n': 5635, 'counties': 35}
+  culex_signal {'beta': 0.0186, 'se': 0.0195, 'p': 0.348, 'n': 5635, 'counties': 35}
+{
+ "county_yearweek_lag2": {
+  "beta_observed": 0.0259,
+  "perm_mean": -0.0215,
+  "perm_sd": 0.0237,
+  "p_one_sided": 0.022,
+  "z_vs_perm": 2.0,
+  "n_perm": 500
+ },
+ "county_yearweek_lag5": {
+  "beta_observed": 0.0631,
+  "perm_mean": 0.0,
+  "perm_sd": 0.0226,
+  "p_one_sided": 0.002,
+  "z_vs_perm": 2.79,
+  "n_perm": 500
+ },
+ "anomaly_spec_lag2": {
+  "beta_observed": 0.0487,
+  "perm_mean": -0.0078,
+  "perm_sd": 0.0283,
+  "p_one_sided": 0.024,
+  "z_vs_perm": 2.0,
+  "n_perm": 500
+ },
+ "anomaly_spec_lag5": {
+  "beta_observed": 0.0646,
+  "perm_mean": -0.0119,
+  "perm_sd": 0.0271,
+  "p_one_sided": 0.002,
+  "z_vs_perm": 2.82,
+  "n_perm": 500
+ }
+}
+
+county + yearweek FE, pools, share
+  0 0.0086 0.0161 0.5986 5635
+  1 0.0194 0.0178 0.284 5635
+  2 0.0259 0.0181 0.1615 5635
+  3 0.0417 0.0174 0.0225 5635
+  4 0.05 0.0172 0.0064 5635
+  5 0.0631 0.0191 0.0023 5635
+  6 0.0723 0.0222 0.0026 5635
+  7 0.0787 0.0253 0.0038 5635
+  8 0.0887 0.0267 0.0022 5635
+  9 0.0884 0.028 0.0033 5635
+  10 0.0923 0.0288 0.0029 5635
+
+county x year + week FE, pools, share
+  0 -0.0351 0.0139 0.0166 5635
+  1 -0.0175 0.0134 0.2022 5635
+  2 -0.0011 0.014 0.9364 5635
+  3 0.0241 0.0128 0.0695 5635
+  4 0.0354 0.011 0.0029 5635
+  5 0.0489 0.0142 0.0015 5635
+  6 0.056 0.0168 0.0021 5635
+  7 0.0618 0.0204 0.0047 5635
+  8 0.0718 0.0221 0.0026 5635
+  9 0.0751 0.0239 0.0035 5635
+  10 0.0805 0.0259 0.0038 5635
+
+ANOMALY county x week + yearweek FE, pools, share
+  0 0.0316 0.0186 0.0988 5635
+  1 0.0447 0.0203 0.0349 5635
+  2 0.0487 0.0204 0.0226 5635
+  3 0.0609 0.0197 0.004 5635
+  4 0.0604 0.0183 0.0022 5635
+  5 0.0646 0.0177 0.0009 5635
+  6 0.0643 0.0197 0.0025 5635
+  7 0.0625 0.0204 0.0043 5635
+  8 0.0655 0.0199 0.0023 5635
+  9 0.0654 0.0207 0.0033 5635
+  10 0.0719 0.0203 0.0012 5635
+
+ANOMALY, pools, observers
+  0 0.0294 0.0213 0.177 5635
+  1 0.0446 0.0233 0.0636 5635
+  2 0.048 0.0226 0.0408 5635
+  3 0.0612 0.0215 0.0074 5635
+  4 0.0602 0.0201 0.0051 5635
+  5 0.0672 0.0193 0.0014 5635
+  6 0.0656 0.0215 0.0044 5635
+  7 0.0665 0.0221 0.0049 5635
+  8 0.071 0.0221 0.0029 5635
+  9 0.0702 0.0224 0.0035 5635
+  10 0.08 0.0221 0.001 5635
+
+ANOMALY, human, share
+  0 0.0001 0.0033 0.986 5635
+  1 0.0022 0.0034 0.5229 5635
+  2 0.0046 0.0031 0.1424 5635
+  3 0.0034 0.003 0.2607 5635
+  4 0.002 0.0034 0.5613 5635
+  5 0.0052 0.0035 0.1436 5635
+  6 0.0052 0.0037 0.1629 5635
+  7 0.0065 0.0051 0.2083 5635
+  8 0.0071 0.0055 0.2073 5635
+  9 0.0074 0.0057 0.198 5635
+  10 0.011 0.0059 0.0729 5635
